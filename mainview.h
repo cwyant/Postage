@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+class QUdpSocket;
+
 namespace Ui {
 class MainView;
 }
@@ -14,9 +16,11 @@ class MainView : public QMainWindow
 public:
     explicit MainView(QWidget *parent = 0);
     ~MainView();
-    
+private slots:
+    void sendBroadcast();
 private:
     Ui::MainView *ui;
+    QUdpSocket *socket;
 };
 
 #endif // MAINVIEW_H
