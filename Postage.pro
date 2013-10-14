@@ -12,7 +12,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainview.cpp
+        mainview.cpp \
+    Peer.cpp
 
 HEADERS  += mainview.h \
     Peer.h
