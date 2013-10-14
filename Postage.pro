@@ -14,6 +14,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainview.cpp
 
-HEADERS  += mainview.h
+HEADERS  += mainview.h \
+    Peer.h
 
 FORMS    += mainview.ui

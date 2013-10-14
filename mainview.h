@@ -18,6 +18,7 @@ public:
     ~MainView();
 private slots:
     void sendBroadcast();
+    void processPendingDatagrams();
 private:
     Ui::MainView *ui;
     QUdpSocket *socket;
