@@ -13,9 +13,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainview.cpp \
-    Peer.cpp
+    Peer.cpp \
+    gatekeeper.cpp
 
 HEADERS  += mainview.h \
-    Peer.h
+    Peer.h \
+    gatekeeper.h
 
 FORMS    += mainview.ui
