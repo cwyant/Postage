@@ -4,11 +4,12 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += gui core
 QT       += network
+QT       += widgets
 
 TARGET = Postage
-TEMPLATE = app
+TEMPLATE += app
 
 
 SOURCES += main.cpp\

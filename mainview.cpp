@@ -21,7 +21,7 @@ MainView::~MainView()
 void MainView::sendBroadcast(){ //send a simple broadcast message and show the avaliable clients
     QByteArray datagram;
     if(ui->plainTextEdit->toPlainText().length()>0)
-        datagram = ui->plainTextEdit->toPlainText().toAscii();
+        datagram = ui->plainTextEdit->toPlainText().toUtf8();
     else
         datagram  = "No Message Sent";
     socket->writeDatagram(datagram.data(),QHostAddress::Broadcast,5922); //send the data
